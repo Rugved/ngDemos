@@ -1,0 +1,12 @@
+::ng-deep {
+    .ng5-slider .ng5-slider-pointer {
+      padding-top:3px;
+      text-align: center;
+      color:white;
+    }
+
+    .ng5-slider .ng5-slider-pointer:after {
+        display: none;
+      }
+      
+}

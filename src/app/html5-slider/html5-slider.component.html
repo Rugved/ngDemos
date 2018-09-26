@@ -1,0 +1,41 @@
+<div class="container">
+  <!-- Example 1 using Angular component through npm 
+  https://github.com/angular-slider/ng5-slider -->
+  <div class="row">
+    <div class="col-6">
+      <h2 class="mb-3">Angular ng5-slider Directive Example</h2>
+
+      Value: <input class="mb-2" type="text" [(ngModel)]="sliderValue">
+      <ng5-slider [(value)]="sliderValue" [options]="sliderOptions" (userChangeStart)="onUserChangeStart($event)"  (userChangeEnd)="onUserChangeEnd($event)" >        
+      </ng5-slider>
+    </div>
+  </div>
+  <!-- Example 2 Kendo UI for Angular Slider -->
+  <div class="row">
+    <div class="col-12">
+      <h2 class="mb-3 mt-3">Kendo UI for Angular Slider Example</h2>
+      Value: <input class="mb-2" type="text" [(ngModel)]="value">
+      <br />
+      <kendo-slider 
+      [fixedTickWidth]="fixedTickWidth"
+      [dragHandleTitle]="value"
+      [showButtons]="showButtons" 
+      [incrementTitle]="max"
+      [decrementTitle]="min"  
+      [min]="min" 
+      [max]="max" 
+      [smallStep]="smallStep"
+      [tickPlacement]="both"
+      [(ngModel)]="value">
+      </kendo-slider>
+    </div>
+  </div>
+    <!-- Example 3 Kendo UI for jQuery Slider -->
+  <div class="row">
+      <div class="col-12">
+        <h2 class="mb-3 mt-3">Kendo UI for jQuery Slider Example</h2>
+        <br />
+        <input #slider min=10 max=200 />
+      </div>
+    </div>
+</div>

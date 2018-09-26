@@ -1,0 +1,117 @@
+<!-- 
+*ngIf="!editMode" 
+*ngIf="editMode"  
+-->
+<div class="container" style="height:1000px;">
+  <b>Angular + Bootstrap</b>
+  <div class="card border-success mainContainer">
+
+    <div [@slideInOut]="animationState" class="card normalCard border-0">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-11">
+            {{sampleText}}
+          </div>
+          <div class="col-1 text-right">
+            <a style="cursor: pointer;" (click)="btnEdit()">...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div [@slideOutIn]="animationStateEdit" class="card editableCard border-0">
+      <div class="card-body">
+
+        <textarea class="card-text" [(ngModel)]="sampleText" name="searchTerm" style="width:100%;"></textarea>
+
+        <div class="row justify-content-between">
+          <div class="col-auto mr-auto">
+            <button type="button" class="btn btn-outline-primary" (click)="btnCancel()">Discard</button>
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-outline-secondary" (click)="btnSave(sampleText)">Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- <div style="height:100px;width:100px;background-color:yellow;">
+    <label (click)="showEmailForm = !showEmailForm"><strong>Open/Close</strong></label>
+</div>
+<div [@slideUpDown] *ngIf="showEmailForm" style="overflow: hidden;height:100px;width:100px;background-color:gray;">
+    <label>Test</label>
+</div>
+<br>
+<br>
+
+<p style="background-color:red;">This is a paragraph.</p>
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
+-->
+  <br>
+  <br>
+
+  <b id="lblNGJQBT">Angular + JQuery + Bootstrap</b>
+  <div *ngIf="!deleteCard" class="card border-success container1" style="position:relative;cursor:pointer;" id="divToDrag"
+    draggable="true" (dragstart)="drag($event)">
+
+    <div class="card normalCard1 border-0">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-11">
+            <label style="height:50px;">{{sampleText1}}</label>
+          </div>
+          <div class="col-1 text-right" style="margin-top:0px;position: relative;">
+
+            <div *ngIf="editMode" [style.opacity]="editMode ? '1' : '0'" [style.visibility]="editMode ? 'visible' : 'hidden'"
+              class="buttons buttons-2 clearfix">
+              <button class="edit edit-2" (click)="toggleUp()"></button>
+              <button class="delete delete-2" (click)="delete()"></button>
+            </div>
+
+            <div style="position:absolute;top: -20px;right:10px;">
+              <a style="cursor: pointer;" (click)="menuClick()">...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card editableCard1 border-0">
+      <div class="card-body">
+
+        <textarea class="card-text" [(ngModel)]="sampleText1" name="searchTerm" style="width:100%;height:150px;"></textarea>
+
+        <div class="row justify-content-between">
+          <div class="col-auto mr-auto">
+            <button type="button" class="btn btn-outline-primary" (click)="toggleDown()">Discard</button>
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-outline-secondary" (click)="toggleDown(sampleText1)">Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="placeHolderMax" style="margin-top:50px;"></div>
+
+  <div id="divToDropMax" (drop)="drop($event)" (dragover)="allowDrop($event)" style="width:50%;height:100px;margin-top:50px;border:1px dotted gray;text-align: center">
+    <p style="color:lightgray;">DROP YOUR CARD HERE TO Maximize</p>
+  </div>
+
+  <div id="divToDropMini" (drop)="drop($event)" (dragover)="allowDrop($event)" style="width:50%;height:100px;margin-top:50px;border:1px dotted gray;text-align: center">
+    <p style="color:lightgray;">DROP YOUR CARD HERE TO Minimize</p>
+  </div>
+
+  <div id="placeHolderMini" style="margin-top:50px;"></div>
+
+</div>

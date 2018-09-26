@@ -1,0 +1,40 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-ww-header-blue shadow">  
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-ww-header-blue shadow">    -->
+    <a class="navbar-brand img-fluid text-white" href="#"><img class="d-inline-block align-middle" src="./assets/ww-logo.svg" width="215" height="60" alt="WageWorks logo"></a>
+    <div class="divider"></div> 
+    <a class="navbar-brand img-fluid text-white" href="#"><img class="d-inline-block align-middle" src="./assets/generic-logo.svg" width="100" height="60" alt="Generic logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link mb-0" routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-dashboard"></i> DASHBOARD</a></li>
+            <li class="nav-item"><a class="nav-link mb-0" routerLink="/claims-activity" routerLinkActive="active" ><i class="fa fa-tasks"></i> CLAIMS & ACTIVITY</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/hsa-hub"routerLinkActive="active"><i class="fa fa-user-md" aria-hidden="true"></i> HSA HUB</a></li>  
+            <li class="nav-item"><a class="nav-link" routerLink="card-center" routerLinkActive="active"><i class="fa fa-credit-card"></i> CARD CENTER</a></li> 
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-tasks"></i> Examples
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="/bootstrap-component-examples" routerLinkActive="active" >Bootstrap Components</a>
+                    <a class="dropdown-item" routerLink="/html5-slider" routerLinkActive="active">Slider Examples</a>
+                    <a class="dropdown-item" routerLink="/flip-transition" routerLinkActive="active">Flip Transition Examples</a>
+                    <a class="dropdown-item" routerLink="/ww-textbox" routerLinkActive="active">Edit Textbox Examples</a>
+                </div>
+            </li>
+ 
+        </ul>
+        <ul class="navbar-nav"><!-- Far right User Menu-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i> Norm Sallman
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">PREFERENCES</a>
+                    <a class="dropdown-item" href="#">LOG OUT</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

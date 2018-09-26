@@ -1,0 +1,69 @@
+.editableCard1{
+    display:none;
+    margin-top:-98px;
+    background-color:#ececec;
+}
+.editableCard{
+    background-color:#ececec;
+}
+
+.normalCard1 , .normalCard{
+    background-color:#ececec;
+}
+.container1 , .mainContainer{
+    width:70%;
+}
+
+.container1Mini{
+    width:30%;
+}
+
+.buttons-2 {
+    position: absolute;
+    top: -27px;
+    left: 10px;
+    z-index: 45;
+    width: 80px;
+    transition: opacity 5s, visibility 5s;
+  }
+
+.edit-2
+{
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-style: none;
+  background-image: url('../../assets/pencil-white.svg');
+  background-repeat: no-repeat;
+  background-size: auto 20px;
+  background-position: center center;
+  background-color: #6b6b6b;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.delete-2 {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-image: url('../../assets/cross-white.svg');
+    background-repeat: no-repeat;
+    background-size: auto 20px;
+    background-position: center center;
+    background-color: #6b6b6b;
+    font-size: 1em;
+    line-height: 1.38;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }

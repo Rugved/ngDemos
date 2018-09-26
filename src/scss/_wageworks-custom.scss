@@ -1,0 +1,91 @@
+// example of setting primary color to the wageworks blue and secondary to white.
+// $theme-colors: (
+//      "primary": #0070aa,
+//      "secondary": #fff,    
+// );
+$theme-colors: ( "ww-header-blue":#0070aa, "ww-sub-menu-blue":#039ABF, "ww-container-blue":#2CBADC, 
+"ww-dark-blue": #024A8E, "ww-orange": #F1801F, "ww-slate": #A89F9D, 
+"ww-black": #000000, "ww-white": #ffffff, );
+
+// example of changing the color of the card header to wageworks blue
+ $card-cap-bg: #3F6EA7;
+ $card-cap-color: #fff;
+
+// example of rounded radius corners globally for all components
+$enable-rounded: true;
+//$enable-rounded: false;
+
+.container, .container-fluid {
+    padding-top: 80px;
+}
+
+//$body-bg: #A89F9D; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // kendo-theme
+// $base-theme:Bootstrap;
+// $skin-name:ww-kendo;
+// $accent: #3f6ea7;
+// $primary:#3F6EA7;
+// $secondary: #e7eef5;
+// $info: #17a2b8;
+// $success: #28a745;
+// $warning: #eec64f;
+// $error: #dc3545;
+// $body-bg: #ffffff;
+// $body-color: #292b2c;
+// $component-bg: #ffffff;
+// $component-color: #292b2c;
+// $card-cap-bg: #3f6ea7;
+// $card-cap-color: #f6f7f9;
+// $series-a: #3f6ea7;
+// $series-b: #5bc0de;
+// $series-c: #5cb85c;
+// $series-d: #f0ad4e;
+// $series-e: #e67d4a;
+// $series-f: #d9534f;
+
+// body { font-family: "RobotoRegular",Helvetica,Arial,sans-serif; font-size: 14px; margin: 0; }
+// app-root { display: block; width: 100%; min-height: 80px; box-sizing: border-box; padding: 30px; }
+//       app-root > .k-icon.k-i-loading { font-size: 64px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+//       .example-wrapper { min-height: 280px; align-content: flex-start; }
+//       .example-wrapper p, .example-col p { margin: 0 0 10px; }
+//       .example-wrapper p:first-child, .example-col p:first-child { margin-top: 0; }
+//       .example-col { display: inline-block; vertical-align: top; padding-right: 20px; padding-bottom: 20px; }
+//       .example-config { margin: 0 0 20px; padding: 20px; background-color: rgba(0,0,0,.03); border: 1px solid rgba(0,0,0,.08); }
+//       .event-log { margin: 0; padding: 0; max-height: 100px; overflow-y: auto; list-style-type: none; border: 1px solid rgba(0,0,0,.08); background-color: #fff; }
+//       .event-log li {margin: 0; padding: .3em; line-height: 1.2em; border-bottom: 1px solid rgba(0,0,0,.08); }
+//       .event-log li:last-child { margin-bottom: -1px;}
